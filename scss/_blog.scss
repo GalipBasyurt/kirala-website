@@ -1,0 +1,1518 @@
+// ! BLOG ANA SAYFA
+// Blog ana sayfa start
+.blog-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .top {
+    margin-bottom: 1.5rem;
+    .title {
+      text-align: center;
+      margin-top: 0.5rem;
+
+      h2 {
+        font-family: $titleFont;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $colorOne;
+      }
+    }
+
+    .baglanti {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+
+      a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        transform: translateY(12%);
+        margin-right: 0.2rem;
+
+        i {
+          color: rgba($color: #333333, $alpha: 0.5);
+        }
+      }
+
+      div {
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: $paragrafFont;
+      font-weight: 400;
+      color: $colorFour;
+      font-size: 1.3rem;
+    }
+  }
+
+  .card-wrap {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .card-item {
+      max-width: 350px;
+      height: 300px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      position: relative;
+      transform: translateY(0);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-4%);
+      }
+
+      figure {
+        max-width: 350px;
+        height: 72%;
+        position: relative;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(255, 0, 0, 0),
+          rgba(35, 109, 169, 0)
+        );
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(
+            to bottom,
+            rgba(255, 0, 0, 0),
+            rgba(35, 109, 169, 2.5)
+          );
+          border-radius: 10px;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          cursor: pointer;
+          z-index: 5;
+        }
+
+        &:hover::after {
+          opacity: 1;
+        }
+
+        img {
+          max-width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+          z-index: -5;
+        }
+      }
+
+      .content {
+        padding: 0 0.7rem;
+        cursor: pointer;
+
+        &:hover {
+          h3 a {
+            color: #262626;
+          }
+        }
+        h3 {
+          font-size: 1rem;
+
+          a {
+            text-decoration: none;
+            color: $colorFour;
+          }
+        }
+      }
+    }
+  }
+}
+// Blog ana sayfa finish
+
+//! Araç Paylaşımında Abonelik Modeli
+// Araç paylaşımında abonelik modeli start
+.abonelik-modeli-wrap {
+  display: flex;
+  flex-direction: column;
+  .top {
+    margin-bottom: 1.5rem;
+    .title {
+      text-align: center;
+      margin-top: 0.5rem;
+
+      h2 {
+        font-family: $titleFont;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $colorOne;
+      }
+    }
+
+    .baglanti {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+
+      a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        transform: translateY(12%);
+        margin-right: 0.2rem;
+
+        i {
+          color: rgba($color: #333333, $alpha: 0.5);
+        }
+      }
+
+      div {
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: $paragrafFont;
+      font-weight: 400;
+      color: $colorFour;
+      font-size: 1.3rem;
+    }
+  }
+
+  .main {
+    .image {
+      margin: 0.8rem 0;
+      display: flex;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        text-align: center;
+        border-radius: 25px;
+      }
+    }
+
+    h4 {
+      font-size: 1.4rem;
+      color: $colorOne;
+      font-weight: 600;
+      font-family: $titleFont;
+      text-align: left;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-family: $paragrafFont;
+      font-weight: 400;
+      color: $colorFour;
+      font-size: 1.2rem;
+    }
+  }
+}
+// Araç paylaşımında abonelik modeli finish
+
+//! Sürüşün Esnasında Karşılaşabileceğin İkaz Lambaları
+// sürüşün esnasında karşılaşabileceğin ikaz lambaları start
+.suris-esnasinda-karsilasabilecegin-ikaz-lambalari-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .top {
+    margin-bottom: 1.5rem;
+    .title {
+      text-align: center;
+      margin-top: 0.5rem;
+
+      h2 {
+        font-family: $titleFont;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $colorOne;
+      }
+    }
+
+    .baglanti {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+
+      a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        transform: translateY(12%);
+        margin-right: 0.2rem;
+
+        i {
+          color: rgba($color: #333333, $alpha: 0.5);
+        }
+      }
+
+      div {
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: $paragrafFont;
+      font-weight: 400;
+      color: $colorFour;
+      font-size: 1.3rem;
+    }
+  }
+  .image {
+    margin: 0.8rem 0;
+    display: flex;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      text-align: center;
+      border-radius: 25px;
+    }
+  }
+
+  .bolum-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        padding: 1rem;
+
+        img {
+          width: 90px;
+        }
+
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  .bolum-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        padding: 1rem;
+
+        img {
+          width: 90px;
+        }
+
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  .bolum-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        padding: 1rem;
+
+        img {
+          width: 90px;
+        }
+
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+// sürüşün esnasında karşılaşabileceğin ikaz lambaları finish
+
+//! Paylaşım Ekonomisinin Tanımı
+// Paylaşım ekonomisinin tanımı start
+.paylasim-ekonomisinin-tanimi-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .top {
+    margin-bottom: 1.5rem;
+    .title {
+      text-align: center;
+      margin-top: 0.5rem;
+
+      h2 {
+        font-family: $titleFont;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $colorOne;
+      }
+    }
+
+    .baglanti {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+
+      a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        transform: translateY(12%);
+        margin-right: 0.2rem;
+
+        i {
+          color: rgba($color: #333333, $alpha: 0.5);
+        }
+      }
+
+      div {
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: $paragrafFont;
+      font-weight: 400;
+      color: $colorFour;
+      font-size: 1.3rem;
+    }
+  }
+  .image {
+    margin: 1.3rem 0;
+    display: flex;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      text-align: center;
+      border-radius: 25px;
+    }
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    color: $colorOne;
+    font-weight: 600;
+    font-family: $titleFont;
+    text-align: left;
+    margin-bottom: 0.8rem;
+    margin-top: 0.4rem;
+  }
+
+  p {
+    font-family: $paragrafFont;
+    font-weight: 400;
+    color: $colorFour;
+    font-size: 1.2rem;
+    // margin-bottom: 0.4rem;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.3rem;
+
+    li {
+      margin-bottom: 1rem;
+
+      span {
+        font-size: 1.2rem;
+        i {
+          color: $colorOne;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .arac-paylasim-yakin-gelecegi {
+    background-color: $colorOne;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    h4 {
+      color: white;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
+// Paylaşım ekonomisinin tanımı finish
+
+//! Araç Paylaşımı İş Modelleri
+// Araç paylaşımı iş modelleri start
+.arac-paylasim-is-modelleri {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .top {
+    margin-bottom: 1.5rem;
+    .title {
+      text-align: center;
+      margin-top: 0.5rem;
+
+      h2 {
+        font-family: $titleFont;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $colorOne;
+      }
+    }
+
+    .baglanti {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+
+      a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        transform: translateY(12%);
+        margin-right: 0.2rem;
+
+        i {
+          color: rgba($color: #333333, $alpha: 0.5);
+        }
+      }
+
+      div {
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: $paragrafFont;
+      font-weight: 400;
+      color: $colorFour;
+      font-size: 1.3rem;
+    }
+  }
+  .image {
+    margin: 1.3rem 0;
+    display: flex;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      text-align: center;
+      border-radius: 25px;
+    }
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    color: $colorOne;
+    font-weight: 600;
+    font-family: $titleFont;
+    text-align: left;
+    margin-bottom: 0.8rem;
+    margin-top: 0.4rem;
+  }
+
+  p {
+    font-family: $paragrafFont;
+    font-weight: 400;
+    color: $colorFour;
+    font-size: 1.2rem;
+    // margin-bottom: 0.4rem;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.3rem;
+
+    li {
+      margin-bottom: 1rem;
+
+      span {
+        font-size: 1.2rem;
+        i {
+          color: $colorOne;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  }
+}
+// Araç paylaşımı iş modelleri finish
+
+//! Park Yeri Sorunu Çözümü
+//Park Yeri Sorunu Çözümü start
+.park-sorunu-cözümler {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .top {
+    margin-bottom: 0.5rem;
+    .title {
+      text-align: center;
+      margin-top: 0.5rem;
+
+      h2 {
+        font-family: $titleFont;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $colorOne;
+      }
+    }
+
+    .baglanti {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+
+      a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        transform: translateY(12%);
+        margin-right: 0.2rem;
+
+        i {
+          color: rgba($color: #333333, $alpha: 0.5);
+        }
+      }
+
+      div {
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: $paragrafFont;
+      font-weight: 400;
+      color: $colorFour;
+      font-size: 1.3rem;
+    }
+  }
+  .image {
+    margin: 1.7rem 0;
+    display: flex;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      text-align: center;
+      border-radius: 25px;
+    }
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    color: $colorOne;
+    font-weight: 600;
+    font-family: $titleFont;
+    text-align: left;
+    margin-bottom: 0.8rem;
+    margin-top: 0.4rem;
+  }
+
+  p {
+    font-family: $paragrafFont;
+    font-weight: 400;
+    color: $colorFour;
+    font-size: 1.2rem;
+
+    a {
+      text-decoration: none;
+      color: $colorOne;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .biliyor-muydun {
+    background-color: $colorOne;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    h4 {
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
+//Park Yeri Sorunu Çözümü finish
+
+//! Araç Paylaşım Uygulamaları Toplu Taşımaya Kıyasla Nasıl Avantajlar Sağlıyor
+// Araç paylaşım uygulamaları toplu taşımaya kıyasla nasıl avantajlar sağlıyor start
+.arac-paylasim-uygulamasi-avantajlari {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .top {
+    margin-bottom: 0.5rem;
+    .title {
+      text-align: center;
+      margin-top: 0.5rem;
+
+      h2 {
+        font-family: $titleFont;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $colorOne;
+      }
+    }
+
+    .baglanti {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+
+      a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        transform: translateY(12%);
+        margin-right: 0.2rem;
+
+        i {
+          color: rgba($color: #333333, $alpha: 0.5);
+        }
+      }
+
+      div {
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: $paragrafFont;
+      font-weight: 400;
+      color: $colorFour;
+      font-size: 1.3rem;
+    }
+  }
+  .image {
+    margin: 1.7rem 0;
+    display: flex;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      text-align: center;
+      border-radius: 25px;
+    }
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    color: $colorOne;
+    font-weight: 600;
+    font-family: $titleFont;
+    text-align: left;
+    margin-bottom: 0.8rem;
+    margin-top: 0.4rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    color: $colorOne;
+    font-weight: 600;
+    font-family: $titleFont;
+    text-align: left;
+    margin-bottom: 0.8rem;
+    margin-top: 0.4rem;
+  }
+
+  p {
+    font-family: $paragrafFont;
+    font-weight: 400;
+    color: $colorFour;
+    font-size: 1.2rem;
+
+    a {
+      text-decoration: none;
+      color: $colorOne;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .biliyor-muydun {
+    background-color: $colorOne;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    h4 {
+      color: white;
+    }
+
+    p {
+      color: white;
+
+      a {
+        text-decoration: none;
+        color: $colorTwo;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .pba {
+    background-color: $colorOne;
+    padding: 1rem;
+    margin: 1rem 0;
+
+    p {
+      color: white;
+
+      a {
+        color: $colorTwo;
+      }
+    }
+  }
+}
+// Araç paylaşım uygulamaları toplu taşımaya kıyasla nasıl avantajlar sağlıyor finish
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  // Araç paylaşımında abonelik modeli start
+  .abonelik-modeli-wrap {
+    .top {
+      .title {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+  // Araç paylaşımında abonelik modeli finish
+
+  // sürüşün esnasında karşılaşabileceğin ikaz lambaları start
+  .suris-esnasinda-karsilasabilecegin-ikaz-lambalari-wrap {
+    .top {
+      .title {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+  // sürüşün esnasında karşılaşabileceğin ikaz lambaları finish
+
+  // Araç paylaşımında abonelik modeli start
+  .paylasim-ekonomisinin-tanimi-wrap {
+    .top {
+      .title {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+  // Araç paylaşımında abonelik modeli finish
+
+  // Araç paylaşımı iş modelleri start
+  .arac-paylasim-is-modelleri {
+    .top {
+      .title {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+  // Araç paylaşımı iş modelleri finish
+
+  //Park Yeri Sorunu Çözümü start
+  .park-sorunu-cözümler {
+    .top {
+      .title {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+  //Park Yeri Sorunu Çözümü finish
+
+  // Araç paylaşım uygulamaları toplu taşımaya kıyasla nasıl avantajlar sağlıyor start
+  .arac-paylasim-uygulamasi-avantajlari {
+    .top {
+      .title {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+  // Araç paylaşım uygulamaları toplu taşımaya kıyasla nasıl avantajlar sağlıyor finish
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  // Araç paylaşımında abonelik modeli start
+  .abonelik-modeli-wrap {
+    margin-top: -1rem;
+
+    .top {
+      margin-bottom: -0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  // Araç paylaşımında abonelik modeli finish
+
+  // sürüşün esnasında karşılaşabileceğin ikaz lambaları start
+  .suris-esnasinda-karsilasabilecegin-ikaz-lambalari-wrap {
+    margin-top: -1rem;
+    .top {
+      margin-bottom: 0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  // sürüşün esnasında karşılaşabileceğin ikaz lambaları finish
+
+  // Araç paylaşımında abonelik modeli start
+  .paylasim-ekonomisinin-tanimi-wrap {
+    margin-top: -1rem;
+    .top {
+      margin-bottom: 0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  // Araç paylaşımında abonelik modeli finish
+
+  // Araç paylaşımı iş modelleri start
+  .arac-paylasim-is-modelleri {
+    margin-top: -1rem;
+    .top {
+      margin-bottom: 0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  // Araç paylaşımı iş modelleri finish
+
+  //Park Yeri Sorunu Çözümü start
+  .park-sorunu-cözümler {
+    margin-top: -1rem;
+    .top {
+      margin-bottom: 0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  //Park Yeri Sorunu Çözümü finish
+
+  // Araç paylaşım uygulamaları toplu taşımaya kıyasla nasıl avantajlar sağlıyor start
+  .arac-paylasim-uygulamasi-avantajlari {
+    margin-top: -1rem;
+    .top {
+      margin-bottom: 0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  // Araç paylaşım uygulamaları toplu taşımaya kıyasla nasıl avantajlar sağlıyor finish
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  // Araç paylaşımında abonelik modeli start
+  .abonelik-modeli-wrap {
+    margin-top: -1rem;
+    .top {
+      margin-bottom: -0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  // Araç paylaşımında abonelik modeli finish
+
+  // sürüşün esnasında karşılaşabileceğin ikaz lambaları start
+  .suris-esnasinda-karsilasabilecegin-ikaz-lambalari-wrap {
+    margin-top: -1rem;
+    .top {
+      margin-bottom: -0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  // sürüşün esnasında karşılaşabileceğin ikaz lambaları finish
+
+  // Araç paylaşımında abonelik modeli start
+  .paylasim-ekonomisinin-tanimi-wrap {
+    margin-top: -1rem;
+    .top {
+      margin-bottom: -0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  // Araç paylaşımında abonelik modeli finish
+
+  // Araç paylaşımı iş modelleri start
+  .arac-paylasim-is-modelleri {
+    margin-top: -1rem;
+    .top {
+      margin-bottom: 0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  // Araç paylaşımı iş modelleri finish
+
+  //Park Yeri Sorunu Çözümü start
+  .park-sorunu-cözümler {
+    margin-top: -1rem;
+    .top {
+      margin-bottom: 0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  //Park Yeri Sorunu Çözümü finish
+
+  // Araç paylaşım uygulamaları toplu taşımaya kıyasla nasıl avantajlar sağlıyor start
+  .arac-paylasim-uygulamasi-avantajlari {
+    margin-top: -1rem;
+    .top {
+      margin-bottom: 0.5rem;
+      .title {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      li {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  // Araç paylaşım uygulamaları toplu taşımaya kıyasla nasıl avantajlar sağlıyor finish
+}

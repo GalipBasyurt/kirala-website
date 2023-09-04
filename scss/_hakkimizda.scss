@@ -1,0 +1,88 @@
+.hakkımızda {
+  margin-top: 0.7rem;
+
+  .top {
+    margin-bottom: 1.5rem;
+    .title {
+      text-align: center;
+      font-family: $titleFont;
+      font-weight: 600;
+      font-size: 2rem;
+      color: $colorOne;
+      margin-top: 0.5rem;
+    }
+
+    .baglanti {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+
+      a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        transform: translateY(12%);
+        margin-right: 0.2rem;
+
+        i {
+          color: rgba($color: #333333, $alpha: 0.5);
+        }
+      }
+
+      div {
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+      }
+    }
+
+    .p-1 {
+      text-align: center;
+      font-family: $paragrafFont;
+      font-weight: 400;
+      color: $colorFour;
+      font-size: 1.3rem;
+    }
+  }
+
+  .image {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    // overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      text-align: center;
+      border-radius: 25px;
+    }
+  }
+
+  p {
+    font-family: $paragrafFont;
+    font-weight: 400;
+    color: $colorFour;
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    color: $colorOne;
+    font-weight: 600;
+    font-family: $titleFont;
+    text-align: left;
+    margin-bottom: 0.8rem;
+  }
+}

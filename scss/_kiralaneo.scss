@@ -1,0 +1,555 @@
+.kirala-neo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &-top {
+    margin-bottom: 1.5rem;
+    h2 {
+      text-align: center;
+      font-family: $titleFont;
+      font-weight: 600;
+      font-size: 2rem;
+      color: $colorOne;
+      margin-top: 0.5rem;
+    }
+
+    .baglanti {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+
+      a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        transform: translateY(12%);
+        margin-right: 0.2rem;
+
+        i {
+          color: rgba($color: #333333, $alpha: 0.5);
+        }
+      }
+
+      div {
+        font-size: 0.9rem;
+        color: rgba($color: #333333, $alpha: 0.5);
+        margin-right: 0.2rem;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-family: $paragrafFont;
+      font-weight: 400;
+      color: $colorFour;
+      font-size: 1.3rem;
+    }
+  }
+
+  &-image {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      text-align: center;
+      border-radius: 25px;
+    }
+  }
+
+  &-content {
+    margin-top: 1.3rem;
+    p {
+      text-align: left;
+      font-family: $paragrafFont;
+      font-weight: 400;
+      color: $colorFour;
+      font-size: 1.3rem;
+    }
+
+    h3 {
+      margin-top: 1.9rem;
+      text-align: left;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      // max-width: 80%;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+
+        i {
+          color: $colorOne;
+        }
+
+        span {
+          margin-left: 0.6rem;
+        }
+      }
+    }
+  }
+
+  &-collapse {
+    margin-top: 1.5rem;
+    .title {
+      text-align: center;
+      color: $colorFour;
+      font-family: $titleFont;
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+
+    &-wrap {
+      margin-top: 1.5rem;
+      &-item {
+        width: 100%;
+        background-color: $colorThree;
+        border-radius: 20px;
+        position: relative;
+        padding: 1rem;
+        margin-bottom: 1.6rem;
+        cursor: pointer;
+
+        i {
+          position: absolute;
+          right: 30px;
+          top: 20px;
+          font-size: 1.7rem;
+          transition: 0.5s ease;
+
+          &.active {
+            transform: rotate(180deg);
+          }
+        }
+
+        h4 {
+          padding: 0 0.6rem;
+          max-width: 80%;
+        }
+
+        .content {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.5s ease;
+
+          &.active {
+            max-height: 300px;
+          }
+
+          p {
+            margin-top: 0.7rem;
+            font-family: $paragrafFont;
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 0 0.6rem;
+          }
+
+          ul {
+            margin: 0;
+            padding: 0 0.6rem;
+
+            li {
+              margin-bottom: 0.7rem;
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .kirala-neo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -1rem;
+
+    &-top {
+      margin-bottom: 0.5rem;
+      h2 {
+        text-align: center;
+        font-family: $titleFont;
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: $colorOne;
+        margin-top: 0.5rem;
+      }
+
+      .baglanti {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -0.2rem;
+        margin-bottom: 1rem;
+
+        a {
+          text-decoration: none;
+          font-size: 0.9rem;
+          color: rgba($color: #333333, $alpha: 0.5);
+          margin-right: 0.2rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        span {
+          transform: translateY(12%);
+          margin-right: 0.2rem;
+
+          i {
+            color: rgba($color: #333333, $alpha: 0.5);
+            font-size: 0.8rem;
+          }
+        }
+
+        div {
+          font-size: 0.9rem;
+          color: rgba($color: #333333, $alpha: 0.5);
+          margin-right: 0.2rem;
+        }
+      }
+
+      p {
+        text-align: center;
+        font-family: $paragrafFont;
+        font-weight: 400;
+        color: $colorFour;
+        font-size: 1.1rem;
+      }
+    }
+
+    &-image {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        text-align: center;
+        border-radius: 25px;
+      }
+    }
+
+    &-content {
+      margin-top: 1.3rem;
+      p {
+        text-align: left;
+        font-family: $paragrafFont;
+        font-weight: 400;
+        color: $colorFour;
+        font-size: 1.1rem;
+      }
+
+      h3 {
+        margin-top: 1.9rem;
+        text-align: left;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        // max-width: 80%;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.8rem;
+          font-size: 1.1rem;
+
+          i {
+            color: $colorOne;
+          }
+
+          span {
+            margin-left: 0.6rem;
+          }
+        }
+      }
+    }
+
+    &-collapse {
+      margin-top: 1.5rem;
+      .title {
+        text-align: center;
+        color: $colorFour;
+        font-family: $titleFont;
+        font-weight: 600;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+
+      &-wrap {
+        margin-top: 1.5rem;
+        &-item {
+          width: 100%;
+          background-color: $colorThree;
+          border-radius: 20px;
+          position: relative;
+          padding: 1rem;
+          margin-bottom: 1.6rem;
+          cursor: pointer;
+
+          i {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            font-size: 1.5rem;
+            transition: 0.5s ease;
+
+            &.active {
+              transform: rotate(180deg);
+            }
+          }
+
+          h4 {
+            padding: 0 0.6rem;
+            max-width: 80%;
+            font-size: 1rem;
+          }
+
+          .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+
+            &.active {
+              max-height: 300px;
+            }
+
+            p {
+              margin-top: 0.7rem;
+              font-family: $paragrafFont;
+              font-size: 0.8rem;
+              font-weight: 400;
+              padding: 0 0.6rem;
+            }
+
+            ul {
+              margin: 0;
+              padding: 0 0.6rem;
+
+              li {
+                margin-bottom: 0.7rem;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .kirala-neo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -1rem;
+
+    &-top {
+      margin-bottom: 0.5rem;
+      h2 {
+        text-align: center;
+        font-family: $titleFont;
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: $colorOne;
+        margin-top: 0.5rem;
+      }
+
+      .baglanti {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -0.2rem;
+        margin-bottom: 1rem;
+
+        a {
+          text-decoration: none;
+          font-size: 0.9rem;
+          color: rgba($color: #333333, $alpha: 0.5);
+          margin-right: 0.2rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        span {
+          transform: translateY(12%);
+          margin-right: 0.2rem;
+
+          i {
+            color: rgba($color: #333333, $alpha: 0.5);
+            font-size: 0.8rem;
+          }
+        }
+
+        div {
+          font-size: 0.9rem;
+          color: rgba($color: #333333, $alpha: 0.5);
+          margin-right: 0.2rem;
+        }
+      }
+
+      p {
+        text-align: center;
+        font-family: $paragrafFont;
+        font-weight: 400;
+        color: $colorFour;
+        font-size: 1.1rem;
+      }
+    }
+
+    &-image {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        text-align: center;
+        border-radius: 25px;
+      }
+    }
+
+    &-content {
+      margin-top: 1.3rem;
+      p {
+        text-align: left;
+        font-family: $paragrafFont;
+        font-weight: 400;
+        color: $colorFour;
+        font-size: 1.1rem;
+      }
+
+      h3 {
+        margin-top: 1.9rem;
+        text-align: left;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        // max-width: 80%;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.8rem;
+          font-size: 1rem;
+
+          i {
+            color: $colorOne;
+          }
+
+          span {
+            margin-left: 0.6rem;
+          }
+        }
+      }
+    }
+
+    &-collapse {
+      margin-top: 1.5rem;
+      .title {
+        text-align: center;
+        color: $colorFour;
+        font-family: $titleFont;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+      }
+
+      &-wrap {
+        margin-top: 1.5rem;
+        &-item {
+          width: 100%;
+          background-color: $colorThree;
+          border-radius: 20px;
+          position: relative;
+          padding: 1rem;
+          margin-bottom: 1.6rem;
+          cursor: pointer;
+
+          i {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            font-size: 1.3rem;
+            transition: 0.5s ease;
+
+            &.active {
+              transform: rotate(180deg);
+            }
+          }
+
+          h4 {
+            padding: 0 0.6rem;
+            max-width: 80%;
+            font-size: 1rem;
+          }
+
+          .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+
+            &.active {
+              max-height: 300px;
+            }
+
+            p {
+              margin-top: 0.7rem;
+              font-family: $paragrafFont;
+              font-size: 0.9rem;
+              font-weight: 400;
+              padding: 0 0.6rem;
+            }
+
+            ul {
+              margin: 0;
+              padding: 0 0.6rem;
+
+              li {
+                margin-bottom: 0.7rem;
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
